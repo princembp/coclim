@@ -1,0 +1,593 @@
+*{
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+body{
+    font-family: "Montserrat";
+    margin: 0;
+}
+
+/*encabezado*/
+header .container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;  
+}
+
+
+header nav {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    padding-bottom: 0px; 
+}
+
+
+header img{
+    cursor:pointer;
+}
+
+/*footer*/
+#footer .container{
+    background-color: rgb(105, 135, 121);
+    text-align: center;
+}
+
+.pie-pag .grupo-1 .box figure{
+    display: flex;
+    justify-content: center;
+}
+
+.pie-pag .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.pie-pag .grupo-1{
+    padding: 35px 0px;
+}
+
+.pie-pag .box a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    border: none; 
+    display: block; 
+}
+
+.pie-pag .grupo-1 .red-social a{
+    font-size: 30px;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    transition: all 0.3s ease 0s;
+}
+.pie-pag .grupo-1 .red-social a:hover{
+    color: rgb(163,94,108);
+}
+.pie-pag .box c:hover{
+    color: rgb(163,94,108);
+}
+
+.pie-pag .grupo-2{
+    color: white;
+    padding: 40px 10px;
+    text-align: center;
+    border-top-style:dotted;
+    border-top: 0.5px solid white;
+ }
+
+/*footer*/
+
+
+/*--navegación--*/
+/*lista*/
+.nav_links{
+    list-style-type: none;
+    top: -40px;
+    margin: 0px;
+    margin-right: 0;
+	display: inline-table;	
+    padding: 0px;     
+}
+/*Resalta página en la que se encuentre*/
+.nav-link.active{
+    color: rgb(105, 135, 121);
+}
+
+
+/*enlaces*/
+header a{
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(157, 157, 157);
+    display: grid;
+    margin-bottom: 27px;
+    transition: all 0.3s ease 0s;
+/*cambio color texto al pasar el cursor*/
+}
+header a:hover{
+    color:rgb(105, 135, 121)  
+}
+a:hover{
+    display: inline-block;
+    border-bottom: 5px solid rgb(157, 157, 157);
+    transition: all .2s ease-in-out;
+}
+
+/**boton contacto*/
+.contacte{
+    font-size: 1em;
+    border: 2.5px solid rgba(105, 135, 121,0.5);
+    border-radius: 100px;
+    color: rgb(69,74,79);
+    background-color: rgba(255, 255, 255,1);
+    text-align: center;
+    display: inline-block;
+    padding: 10px 25px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.contacte:hover{
+    background-color: rgb(105, 135, 121);
+    color: white;
+    transform: scale(1.05);  
+}
+/*boton2_tornar-inici*/
+#flecha{ 
+    font-size: 10px;
+    font-weight:bold;
+    padding: 10px 15px;
+    border: 2.5px solid rgba(127, 127, 127,0.5);
+    border-radius: 100%;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: black;
+    background-color: rgba(255, 255, 255,0.5);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+#flecha:hover{
+    background-color: rgb(127,127,127);
+    color: white;
+}
+
+
+/*vendrell*/
+h1{font-size: 3em;}
+#vendrell {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("images/vendrell.jpg");
+    text-align: center;
+    color: white;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+} 
+
+/*sobre nosaltres*/
+h2{font-size: 2.5em;color: rgb(105, 135, 121)}
+p{font-size: 1.25em;}
+#proj-noe .container{
+    padding: 200px 20px;
+   
+}
+#proj-noe .texto h2{
+    text-align: center;
+}
+#proj-noe .texto a{
+    text-decoration: none;
+    border: none;
+}
+
+#proj-noe .texto p{
+    text-align: justify;
+    line-height: 1.5;
+
+}
+#proj-noe .texto a:hover{color: red;}
+
+
+#valors .container{
+    display: flex;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ) 
+    ,url(images/value.jpg);
+    background-size: contain;
+    background-repeat:no-repeat;
+    padding: 200px 12px;
+    text-align: center;
+    background-position: center;
+    justify-content: center;
+}
+
+
+#valors li{
+    list-style: none;
+    display: flex;
+    font-size: 1.2em;
+    margin: 30px 0px;
+    margin-top: 0;
+    transition: all 0.3s ease 0s;
+}
+
+
+#valors li:hover{
+    display: grid;
+    color: white;
+}
+
+
+.h3-valors{
+    border-inline-end: 3.5px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+
+
+/*boton_equipo*/
+h3{font-size: 2em;}
+button{
+    font-size: 1em;
+    font-weight:bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2.5px solid rgba(105, 135, 121,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: rgb(69,74,79);
+    background-color: rgba(255, 255, 255,1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;}
+
+button:hover{
+    background-color: rgb(105, 135, 121);
+    color: white;
+}
+
+
+/*equipo*/
+#qui-som .container{padding: 100px 10px;}
+#qui-som h2{margin-top: 0;font-size: 3.2em;}
+.info{display: none;}
+#qui-som{background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+
+.equip:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("images/p2.jpg");
+}
+.equip:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("images/p3.jpg");
+}
+
+.equip:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("images/sho.jpg");
+    
+}
+
+
+#qui-som .equip{
+    background-position: center;
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding:80px 0px;
+    margin: 30px;
+}
+
+
+/*Descripció del projecte*/
+#descripcio-projecte .container{
+    text-align: center;
+    padding: 200px 20px;
+    padding-top: 0;
+}
+
+#descripcio-projecte .job-texto img{
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 15px;
+}
+
+#descripcio-projecte .job-texto a{
+    text-decoration: none;
+    border: none; 
+}
+
+#descripcio-projecte .metod .def{
+    margin-top: 80px; 
+}
+
+#descripcio-projecte .job-texto p,ol{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#descripcio-projecte .job-texto h2{
+    margin-top: 80px;
+    margin-bottom: -10px; 
+}
+
+#descripcio-projecte .job-texto .resultats{
+    margin-bottom: -20%;
+}
+
+
+
+/*pàgina contacte*/
+#form_cont {
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(253,239,232);
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+}
+
+label {
+    color: #000000;
+    display: block;
+    margin-bottom: 5px;
+}
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;    
+}
+  
+  input[type="submit"] {
+    font-size: 1em;
+    font-weight:bold;
+    padding: 10px;
+    border: 2.5px solid rgba(105, 135, 121,0.5);
+    color: rgb(255,255,255);
+    background-color: rgba(105, 135, 121);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;  
+}
+  
+  input[type="submit"]:hover {
+    background-color: rgb(105, 135, 121);
+    color: rgb(69,74,79);
+}
+
+  input[type="submit"]:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+  textarea {
+    resize:vertical;
+}
+
+#form_cont c:hover{
+    color: rgb(163,94,108);
+}
+
+#form_cont a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    border: none; 
+    display: block;
+    text-align: center; 
+    line-height: 2.5;
+}
+
+#form_cont h2, p{
+    text-align: center;
+}
+
+.dades {
+    border-bottom: 3.5px solid black;
+    padding-bottom: 25px;
+    display:inline-block;
+    margin-left: 20%;
+}
+.esc-ns{
+    font-size: 2em;
+}
+
+
+/*mapa*/
+#map{
+    height: 600px; 
+    margin: 15px;
+}
+
+.map-text h2{
+    text-align: center;
+}
+
+
+
+/*los estilos dentro de ella se activarán cuando el ancho de la pantalla sea igual o superior a 720 píxeles*/
+@media (min-width: 720px) {
+
+    /*footer*/
+    .pie-pag .grupo-1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px 0px;   
+    }
+
+    /*inici*/
+    .nav_links li{
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    
+
+    #vendrell{
+        height: 90vh; 
+        font-size: 1.3em;
+    }
+
+
+    #proj-noe .texto{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
+    #proj-noe .container{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(253,239,232);
+    }
+
+    #proj-noe .image-container{
+        background-image: url("images/inund.jpg");
+        height: 600px;
+        width: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+    /*qui som*/
+    #qui-som .som{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #qui-som p{
+        font-size: 16px;
+    }
+    
+    #qui-som h3{
+        margin-top: 0;
+    }
+    
+    #qui-som .equip{
+        padding: 50px;
+        background-size: 100% 150px; 
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(50,50,50,1);
+        box-shadow: 2px 2px 10px rgb(0,0,0,0.5);
+    }
+    
+    
+    .equip:first-child{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("images/p2.jpg");
+            
+    }
+        
+    .equip:nth-child(2){
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("images/p3.jpg");
+    }
+        
+    .equip:nth-child(3){
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("images/sho.jpg"); 
+    }
+
+
+
+    /*descripció del projecte*/
+    #descripcio-projecte .container{
+        text-align: center;
+        padding: 200px 20px;
+        padding-top: 0;
+        padding-right: 40%;
+        margin-left: 20px;
+    }
+
+
+    .des-vol-proj,
+    .resultats{
+        background-color: rgb(253,239,232);
+        padding: 10px 50px;
+    }
+
+
+    .metod{
+        padding: 10px 50px;
+    }
+
+    
+    #descripcio-projecte .job-texto h2{
+        text-align: left;
+    }
+
+    /*página contacte*/
+    #form_cont a{
+        padding-right: 40%;
+    }
+
+}

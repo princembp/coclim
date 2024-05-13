@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NOÉ</title>
+        <link rel="stylesheet" href="estilos.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/3112fc0129.js" crossorigin="anonymous"></script>
+        <script src="java_scr.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <img src="images/logo_250.svg" alt="logo" id="logo" onclick="location.href='index.html';">
+                <nav>
+                    <ul class="nav_links">
+                        <div class="a"></div>
+                            <li><a href="index.html">INICI</a></li>
+                            <li><a href="Qui som.html">QUI SOM</a></li>
+                            <li><a class="nav-link active" href="#descripcio-projecte">DESCRIPCIÓ DEL PROJECTE</a></li>
+                            <li><a href="maps.html">MAPA</a></li>
+                            <li><a class="contacte" href="Contacte.html">CONTACTE</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <section id="descripcio-projecte">
+            <div class="container">
+                <div class="job-texto">
+                    <div class="des-vol-proj">
+                        <h2>Desenvolupament del Projecte</h2>
+                        <p>El primer pas consisteix en la recerca d'informació rellevant, utilitzant fonts rigoroses i científiques per analitzar les dades necessàries per al seu ús posterior. En aquest cas, s'han utilitzat fonts amb dades climàtiques, com ara l'E-OBS, el qual també s'aprofita d'altres fonts de dades com el Copernicus o el Climate Change Service.</br>
+                            <br>Un cop establertes les fonts d'informació, el pas següent és el tractament de les dades que s'utilitzen per a l'estudi. Això inclou variables com la precipitació (RR), el vent (FG) i la humitat (HU).
+                        </p>
+
+                        <p>El tercer pas consisteix en la transformació dels fitxers per extreure'n la informació rellevant. A cada variable se li han aplicat les següents clàusules:
+                            S'ha extret la informació indicant les coordenades de la zona d'estudi, com es pot observar en les funcions següents, amb l'objectiu d'obtenir només les dades del Vendrell.</br>
+                            <br>Les dades s'han limitat a un període específic per al seu anàlisi posterior. Això vol dir que s'ha especificat, a través d'un codi per a les tres variables, un període de temps i un nom per a guardar-les posteriorment com a fitxers en format de taules per a les tres variables climàtiques.</br>
+                        </p>
+
+                        <img src="images/met1.png">
+                        <p> <br>Un cop completat el procés descrit anteriorment, es va iniciar la creació dels Calendarplots. L'objectiu principal d'aquesta etapa és facilitar la visualització ràpida de les dades, que poden ser potencialment complexes, d'una manera familiar per a l'usuari interessat.</br><br> Aquesta representació gràfica permet mostrar de manera clara i concisa les variacions en les dades climàtiques al llarg del temps, proporcionant una comprensió immediata de les tendències i els patrons.</br>
+
+                        </p>
+                        <img src="images/calplot.png">
+
+                        <p>
+                            <ol>La part de treball amb ArcGIS es va dur a terme a través de diferents fases:
+                                <li>Descarrega de capes: Es van descarregar les capes de tipus de sòl, renda econòmica i equipaments. Les dades de renda econòmica es van extreure de l'INE, les de tipus de sòl es van obtenir de l'ICGC, i les de equipaments es van generar internament.</li>
+                        
+                                <li>Preparació de capes: En aquesta fase es van realitzar operacions com retalls, unions i digitalització manual per preparar les capes per a l'anàlisi posterior.</li>
+                        
+                                <li>Superposició Ponderada: Es va utilitzar la tècnica de superposició ponderada utilitzant les tres capes esmentades anteriorment, prèviament convertides a raster, per obtenir resultats integrats i ponderats.</li>
+                            </ol>
+                        </p>
+                        
+                        <b>Mapa d'equipaments i accessibilitat del Vendrell</b>
+                        <img src="images/AccesEquip.png" alt="Mapa d'equipaments i accessibilitat del Vendrell">
+                        <b>Mapa nivell de renda per personal del Vendrell</b>
+                        <img src="images/Renda.png"alt="Mapa nivell de renda per personal del Vendrell">
+                        <b>Mapa d’usos del Sòl del Vendrell</b>
+                        <img src="images/Usos.png"alt="Mapa d’usos del Sòl del Vendrell">
+
+                    </div>
+
+                    <div class="metod">
+                        <h2>Metodologia</h2>
+                        <p><b>Factors davant el perill d'inundació al municipi del Vendrell.</b></p>
+                        <a href="https://docs.google.com/spreadsheets/d/1wUIP9vY-GzTD0W8PlO1ttahAkpKCdKH2bhEA6qxfbQo/edit?usp=drive_link"><img src="images/factors.png"></a>
+                        <p class="def"><b>Definició de variables, indicadors i valors.</b></p> 
+                        <img src="images/def_var.png"> 
+                    </div>
+
+                    <div class="resultats">
+                        <h2>Resultats</h2>
+                        <p><br>El municipi del Vendrell presenta una variada distribució de nivells de risc d'inundació en tot el seu territori. Es destaca clarament que les zones externes del municipi mostren nivells de risc d'inundació mitjà, alt i predominantment molt alt, mentre que a les zones més cèntriques es troben nivells de risc molt baix i baix.</br><br>El risc d'inundació alt és el més predominant, amb un total de 1280 hectàrees, seguit del risc mitjà amb 798 hectàrees. Tot i que els nivells de risc baixos no són els més predominants, podem destacar positivament que el nivell de risc més perillós, el molt alt, és el que representa menys superfície, amb només 93,87 hectàrees.</br></p>
+                        <a href="https://drive.google.com/file/d/1AZp-v89BJhyYwHTqsAUAPl5xvfsmswy1/view?usp=drive_link"><img src="images/Mapa Final.png" alt="Mapa del nivell de risc davant d'inundacions del municipi del Vendrell"></a>
+                        <p><br>S'han creat Calendarplots com a eines il·lustratives per visualitzar de manera més clara els resultats obtinguts de l'anàlisi de les dades. Com es pot veure a continuació, es mostren dos anys de tota la sèrie analitzada: el 2000 i el 2022.</br> <br>La selecció d'aquests anys es basa en els esdeveniments que van tenir lloc el juny del 2000, un any en què es van produir inundacions significatives a la zona d'estudi. Durant aquest episodi, es van registrar més de 100 litres/m² en pocs minuts, entre els dies 9 i 10 del mes de juny.</br></p>
+                        <a href="https://drive.google.com/file/d/1uA7pULdzyPVneEBivHxfcixXATL0X5Y8/view?usp=drive_link"><img src="images/2000.png" alt=" Risc d'inundació el Vendrell a l'any 2000"></a> 
+                        <a href="https://drive.google.com/file/d/19TOHFC_ygQ0lPeERdmS4QUOSuR_c6jGL/view?usp=drive_link>"><img src="images/2022.png" alt=" Risc d'inundació el Vendrell a l'any 2022"></a>
+                    </div>
+                </div>
+           </div>         
+        </section>    
+        
+        
+        <section id="footer">
+            <footer class="pie-pag">
+                <div class="container">
+                    <div class="grupo-1">
+                        <div class="box">
+                            <figure>
+                                <a href="#">
+                                    <img src="images/logo-200-blanco.svg" alt="logo de noe">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="box">
+                            <h2>Un projecte de:</h2>
+                            <a href="https://www.ftg.urv.cat/es/"><img src="images/urv_200.svg" alt="urv"></a> 
+                            <a href="mailto:projectenoé@gmail.com"><b>Email:</b> <c>projectenoé@gmail.com</c></a>
+                            <a href="tel:+34642137504"><b>Telèfon i WhatsApp:</b> <c>643057218</c></a>
+                        </div>
+                        <div class="box">
+                            <h2>Segueix-nos</h2>
+                            <div class="red-social">
+                                <a href="https://www.facebook.com/" class="fa-solid fa-brands fa-facebook-f fa-bounce" style="--fa-animation-duration: 3s;"></a>
+                                <a href="https://www.instagram.com/" class="fa-solid fa-brands fa-instagram fa-bounce" style="--fa-animation-duration: 3s;"></a>
+                                <a href="https://twitter.com/" class="fa-solid fa-brands fa-x-twitter fa-bounce" style="--fa-animation-duration: 3s;"></a>
+                                <a href="https://www.youtube.com/" class="fa-solid fa fa-youtube fa-bounce" style="--fa-animation-duration: 3s;"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grupo-2">
+                        <small>&copy;2024 Projecte NOÉ. All Rights Reserved.</small>
+                    </div>
+                </div>
+            </footer>
+       </section>
+
+       <button class="butt2" onclick="topFunction()" id="flecha" title="up-down">⬆</button>
+
+       <script src="java_scr.js"></script>
+
+    </body>
+</html>
