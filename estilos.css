@@ -450,10 +450,12 @@ label {
 
 
 /*mapa*/
-#map{
+#map iframe{
     height: 600px; 
-    margin: 15px;
+    width: 100%; 
+    padding-left: 10%;
 }
+
 
 .map-text h2{
     text-align: center;
