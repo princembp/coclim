@@ -197,7 +197,9 @@ h1{font-size: 3em;}
 h2{font-size: 2.5em;color: rgb(105, 135, 121)}
 p{font-size: 1.25em;}
 #proj-noe .container{
-    padding: 200px 20px;
+    padding: 50px 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
    
 }
 #proj-noe .texto h2{
@@ -451,9 +453,10 @@ label {
 
 /*mapa*/
 #map iframe{
-    height: 600px; 
-    width: 100%; 
-    padding-left: 10%;
+    height: 500px; 
+    width: 100%;
+    margin-left: 10px; 
+    margin-right: 10px;
 }
 
 
@@ -590,6 +593,11 @@ label {
     /*página contacte*/
     #form_cont a{
         padding-right: 40%;
+    }
+
+    #map iframe{
+       width: 100%;
+       margin-left: 10%;
     }
 
 }
