@@ -20,22 +20,29 @@ body{
 }
 
 /*encabezado*/
+header {padding: 10px 0px;
+    position: relative;
+    background-color: rgb(12,35,30);
+}
 header .container{
     align-items: center;
     display: flex;
-    flex-direction: column;  
+    margin: 0px 15px;
 }
 
+header .mainlogo{
+    flex-grow: 1;
+    display: flex;
+}
 
 header nav {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     text-align: center;
     display: flex;
     flex-direction:column;
     padding-bottom: 0px; 
 }
-
 
 header img{
     cursor:pointer;
@@ -101,15 +108,41 @@ header img{
 /*lista*/
 .nav_links{
     list-style-type: none;
-    top: -40px;
     margin: 0px;
-    margin-right: 0;
-	display: inline-table;	
-    padding: 0px;     
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+    background: rgb(12,35,30); 
+    width: 100%;
+    padding-top: 20px;	
+         
 }
+
+/* Botón de menú hamburguesa */
+.menu-toggle {
+    font-size: 17px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0;
+    background-color: rgb(12,35,30);
+    padding: 0;
+    outline: none;
+    color: white;
+    box-shadow:none;
+}
+.menu-toggle:hover{
+    background: none;
+}
+
 /*Resalta página en la que se encuentre*/
 .nav-link.active{
-    color: rgb(105, 135, 121);
+    color: rgb(188, 184, 159);
+}
+.nav_links.responsive {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
 }
 
 
@@ -175,7 +208,7 @@ a:hover{
 
 
 /*vendrell*/
-h1{font-size: 3em;}
+h1{font-size: 1.5em;}
 #vendrell {
     background-image: linear-gradient(
         0deg,
@@ -185,12 +218,14 @@ h1{font-size: 3em;}
     ,url("images/vendrell.jpg");
     text-align: center;
     color: white;
-    height: 35vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
+    padding: 29px 0px;
+    padding-bottom: 0px;
 } 
 
 /*sobre nosaltres*/
@@ -228,7 +263,7 @@ p{font-size: 1.25em;}
     ,url(images/value.jpg);
     background-size: contain;
     background-repeat:no-repeat;
-    padding: 200px 12px;
+    padding: 50px 12px;
     text-align: center;
     background-position: center;
     justify-content: center;
@@ -237,10 +272,10 @@ p{font-size: 1.25em;}
 
 #valors li{
     list-style: none;
-    display: flex;
+    display: block;
     font-size: 1.2em;
-    margin: 30px 0px;
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
     transition: all 0.3s ease 0s;
 }
 
@@ -281,8 +316,8 @@ button:hover{
 
 
 /*equipo*/
-#qui-som .container{padding: 100px 10px;}
-#qui-som h2{margin-top: 0;font-size: 3.2em;}
+#qui-som .container{padding: 5px 10px;}
+#qui-som h2{margin-top: 50px;font-size: 3.2em;}
 .info{display: none;}
 #qui-som{background-color: rgb(30, 30, 30);
     color: white;
@@ -334,6 +369,9 @@ button:hover{
     padding: 200px 20px;
     padding-top: 0;
 }
+#descripcio-projecte h2{
+    font-size: 1.8em;
+} 
 
 #descripcio-projecte .job-texto img{
     width: 100%;
@@ -481,11 +519,21 @@ label {
         display: inline-block;
         padding: 0px 20px;
     }
+
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav_links {
+        display:inline-table; 
+       
+    }
     
 
     #vendrell{
         height: 90vh; 
-        font-size: 1.3em;
+        font-size: 2em;
     }
 
 
@@ -509,8 +557,18 @@ label {
         background-repeat: no-repeat;
     }
 
+    #valors .container{
+        padding: 200px 12px;
+    }
+    #valors li{
+        margin: 30px 0px;
+        margin-top: 0;
+    }
+
 
     /*qui som*/
+    #qui-som .container{padding: 100px 10px;}
+
     #qui-som .som{
         display: flex;
         justify-content: center;
@@ -520,6 +578,10 @@ label {
         font-size: 16px;
     }
     
+    #qui-som h2{
+        margin-top: 0;
+    }
+
     #qui-som h3{
         margin-top: 0;
     }
@@ -573,11 +635,16 @@ label {
         margin-left: 20px;
     }
 
+    #descripcio-projecte h2{
+        font-size: 35px;
+    } 
+
 
     .des-vol-proj,
     .resultats{
         background-color: rgb(253,239,232);
         padding: 10px 50px;
+        margin-top: 10px;
     }
 
 

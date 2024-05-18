@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>NOÉ</title>
+        <link rel="icon" href="images/mini_icon.jpg">
         <link rel="stylesheet" href="estilos.css">
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <script src="https://kit.fontawesome.com/3112fc0129.js" crossorigin="anonymous"></script>
@@ -12,16 +13,17 @@
     <body>
         <header>
             <div class="container">
-                <img src="images/logo_250.svg" alt="logo" id="logo" onclick="location.href='index.html';">
+                <div class="mainlogo"><img src="images/logo_whitesvg.svg" alt="logo" id="logo" onclick="location.href='index.html';"></div> 
+                <button class="menu-toggle" id="menu-toggle" onclick="myFunction()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
                 <nav>
-                    <ul class="nav_links">
-                        <div class="a"></div>
+                    <ul class="nav_links" id="nav-links">
                             <li><a href="index.html">INICI</a></li>
                             <li><a href="Qui som.html">QUI SOM</a></li>
                             <li><a href="Descripció del projecte.html">DESCRIPCIÓ DEL PROJECTE</a></li>
                             <li><a href="maps.html">MAPA</a></li>
                             <li><a class="contacte" href="Contacte.html">CONTACTE</a></li>
-                        </div>
                     </ul>
                 </nav>
             </div>

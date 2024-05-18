@@ -35,24 +35,15 @@
   });
 
 
+    // menu 
+    function myFunction() {
+      var x = document.getElementById("nav-links");
+      if (x.className === "nav_links") {
+          x.className += " responsive";
+      } else {
+          x.className = "nav_links";
+      }
+      }
 
-    // Inicializa el mapa
-    var map = L.map('map').setView([41.2166700, 1.5333300],13);// Coordenadas de El Vendrell
-
-    // Añade una capa de mosaicos de OpenStreetMap
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-
-
-    // Crea un marcador para El Vendrell
-    var marker = L.marker([41.2166700, 1.5333300]).addTo(map);
-     marker.bindPopup("<b>El Vendrell</b><br>").openPopup();
-
-     L.circleMarker(
-      [41.2166700, 1.5333300 - 0.001], 
-      {radius: 50, color: "black", fillColor: "red"}
-      ).addTo(map);
 
 
