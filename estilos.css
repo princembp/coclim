@@ -157,7 +157,7 @@ header a{
 /*cambio color texto al pasar el cursor*/
 }
 header a:hover{
-    color:rgb(105, 135, 121)  
+    color:rgb(255, 255, 255)  
 }
 a:hover{
     display: inline-block;
@@ -273,8 +273,8 @@ p{font-size: 1.25em;}
 #valors li{
     list-style: none;
     display: block;
-    font-size: 1.2em;
-    margin: 0;
+    font-size: 0.8em;
+    margin: 10px 0;
     padding: 0;
     transition: all 0.3s ease 0s;
 }
@@ -400,6 +400,10 @@ button:hover{
 
 #descripcio-projecte .job-texto .resultats{
     margin-bottom: -20%;
+}
+
+.indice-flotante {
+    display: none;
 }
 
 
@@ -563,6 +567,7 @@ label {
     #valors li{
         margin: 30px 0px;
         margin-top: 0;
+        font-size: 20px;
     }
 
 
@@ -656,6 +661,44 @@ label {
     #descripcio-projecte .job-texto h2{
         text-align: left;
     }
+
+    .indice-flotante{
+        display: block;
+        position: fixed;
+        top: 50%;
+        right: 0;
+        margin-right: 7%;
+        padding: 10px 30px;
+        background-color: rgb(105, 135, 121);
+        border: 1px solid #ccc;
+        transform: translateY(-50%);
+    }
+    .indice-flotante ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .indice-flotante li {
+        margin: 10px 0;
+        font-size: 1em;   
+    }
+    .indice-flotante a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 10px;
+        display: block;
+        border-bottom:none; 
+    }
+    .h3-index{
+        border-bottom: 3.5px solid rgb(0, 0, 0);
+        padding-bottom: 5px;
+        color: white;
+    }
+    .indice-flotante a:hover{
+        color: rgb(188, 184, 159);
+    }
+
+
 
     /*página contacte*/
     #form_cont a{
