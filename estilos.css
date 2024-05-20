@@ -607,7 +607,7 @@ label {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
         )
-        ,url("images/p2.jpg");
+        ,url("images/p2.jpg");width: 250px;
             
     }
         
@@ -617,7 +617,7 @@ label {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
         )
-        ,url("images/p3.jpg");
+        ,url("images/p3.jpg");width: 250px;
     }
         
     .equip:nth-child(3){
@@ -626,7 +626,7 @@ label {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
         )
-        ,url("images/sho.jpg"); 
+        ,url("images/sho.jpg");width: 250px; 
     }
 
 
