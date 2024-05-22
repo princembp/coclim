@@ -8,9 +8,9 @@
 
 <u>Motivació:</u>
 
-    La motivació per crear la pàgina web sobre aquest tema sorgeix de l'assignatura de Projecte 5, on vam elaborar una sèrie d'indicadors i un mapa final. 
+La motivació per crear la pàgina web sobre aquest tema sorgeix de l'assignatura de Projecte 5, on vam elaborar una sèrie d'indicadors i un mapa final. 
 
-    La finalitat era comunicar el servidor climàtic amb alguna plataforma, i com que no havíem fet l'assignatura d'eines web abans, vam fer la comunicació a partir de plantilles. Així doncs, se m'ha presentat l'oportunitat d'aprofitar el treball fet al primer quadrimestre i plasmar-lo en aquest projecte.
+La finalitat era comunicar el servidor climàtic amb alguna plataforma, i com que no havíem fet l'assignatura d'eines web abans, vam fer la comunicació a partir de plantilles. Així doncs, se m'ha presentat l'oportunitat d'aprofitar el treball fet al primer quadrimestre i plasmar-lo en aquest projecte.
 
 ### 2. **Dades/continguts.**
 El contingut del **text** s'ha extret principalment del  "[Document PDF Projecte NOÉ](https://drive.google.com/file/d/1GT2N6lghaGxA4k6ZcLhOg9EI_Dvn5J11/view?usp=drive_link)"
