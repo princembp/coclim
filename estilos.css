@@ -496,7 +496,7 @@ label {
 /*mapa*/
 #map iframe{
     height: 500px; 
-    width: 100%;
+    width: 350px;
     margin-left: 10px; 
     margin-right: 10px;
 }
@@ -705,13 +705,11 @@ label {
         padding-right: 40%;
     }
 
-    #map iframe{ 
-       width: 100%;
-       margin-left: 10%;
-    }
-
-    .container #map{
-      margin-right: 10%;
+    #map iframe{
+       height:85vh;
+       width: 1205px;
+       padding-left: 15px;
+       
     }
 
 }
