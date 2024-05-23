@@ -41,7 +41,7 @@ Font de les fotos:
 + Mapa
 + Contacte
 ### 4. **Web responsive.**
-Per a crear la meva pàgina web, vaig seguir una estratègia de **disseny mobile first**, vaig dissenyar inicialment la versió per a dispositius mòbils i després vaig adaptar el disseny per a pantalles més grans mitjançant **CSS Media Queries:**
+Per a crear la meva pàgina web, vaig seguir una estratègia de **disseny _mobile first_**, vaig dissenyar inicialment la versió per a dispositius mòbils i després vaig adaptar el disseny per a pantalles més grans mitjançant **CSS Media Queries:**
 
 ```css
 /*footer*/
@@ -87,14 +87,15 @@ Integració del mapa a la página web:
 
 ![Reference Image](/images/qgis2map.png)
 ### 6. **Dificultats/millores.**
-Dificultats:
+<u>Dificultats:</u>
 
 Vaig experimentar un problema específic amb el mapa, ja que no s'ajustava correctament quan el col·locava en el format de telèfon. En ajustar les mesures de width i height, acabava afectant la mida del mapa tant en dispositius petits com en grans. Al final, vaig poder **solucionar** el problema fent el **template: pantalla completa i el Extent: Ajustar a l'extensió de les capes**.
 
-Millores:
+<u>Millores:</u>
+
 Penso que es poden fer moltes millores en la pàgina web, entre altres:
 + Afegir Media Queries per a dispositius de grandària 768px (tauleta).
 
-+ Afegir més membres d'equips.
++ Afegir més membres d'equips i ampliar la informació.
 
-+ Afegir més informació en els pop ups.
++ Afegir més informació als _pop ups_.
