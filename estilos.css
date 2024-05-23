@@ -576,11 +576,17 @@ label {
 
     #qui-som .som{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
     }
     
     #qui-som p{
         font-size: 16px;
+        text-align: left;
+        line-height: 1.5;
+        padding: 10px;
+        margin: 0;
+        
+        
     }
     
     #qui-som h2{
@@ -588,16 +594,23 @@ label {
     }
 
     #qui-som h3{
-        margin-top: 0;
+        margin: 0;
+
     }
     
     #qui-som .equip{
-        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 0px;
         background-size: 100% 150px; 
         background-repeat: no-repeat;
         background-position-y: 0;
         background-color: rgb(50,50,50,1);
         box-shadow: 2px 2px 10px rgb(0,0,0,0.5);
+    }
+    #masymenos {
+        align-self: center;
     }
     
     
@@ -626,7 +639,7 @@ label {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
         )
-        ,url("images/sho.jpg");width: 250px; 
+        ,url("images/sho.jpg");width: 250px;
     }
 
 
