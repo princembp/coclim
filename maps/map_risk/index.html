@@ -10,9 +10,6 @@
         <link rel="stylesheet" href="css/L.Control.Layers.Tree.css">
         <link rel="stylesheet" href="css/qgis2web.css">
         <link rel="stylesheet" href="css/fontawesome-all.min.css">
-        <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
-        <link rel="stylesheet" href="css/leaflet-measure.css">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <style>
         html, body, #map {
             width: 100%;
@@ -37,8 +34,6 @@
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
         <script src="js/leaflet.wms.js"></script>
-        <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
-        <script src="js/leaflet-measure.js"></script>
         <script src="data/Grauderisc_5.js"></script>
         <script src="data/Puntscrtics_6.js"></script>
         <script>
@@ -86,18 +81,6 @@
             popup.update();
           }
         }, true);
-        var measureControl = new L.Control.Measure({
-            position: 'topleft',
-            primaryLengthUnit: 'meters',
-            secondaryLengthUnit: 'kilometers',
-            primaryAreaUnit: 'sqmeters',
-            secondaryAreaUnit: 'hectares'
-        });
-        measureControl.addTo(map);
-        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
-        .innerHTML = '';
-        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
-        .className += ' fas fa-ruler';
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
             if (bounds_group.getLayers().length) {
@@ -130,10 +113,10 @@
         });
         layer_GoogleMaps_1;
         map.addLayer(layer_GoogleMaps_1);
-        map.createPane('pane_RiesgoalapoblacindeorigenfluvialT500aos_2');
-        map.getPane('pane_RiesgoalapoblacindeorigenfluvialT500aos_2').style.zIndex = 402;
-        var layer_RiesgoalapoblacindeorigenfluvialT500aos_2 = L.WMS.layer("https://wms.mapama.gob.es/sig/Agua/Riesgo/RiesgoPob_500/wms.aspx", "NZ.RiskZone", {
-            pane: 'pane_RiesgoalapoblacindeorigenfluvialT500aos_2',
+        map.createPane('pane_RiscT500aos_2');
+        map.getPane('pane_RiscT500aos_2').style.zIndex = 402;
+        var layer_RiscT500aos_2 = L.WMS.layer("https://wms.mapama.gob.es/sig/Agua/Riesgo/RiesgoPob_500/wms.aspx", "NZ.RiskZone", {
+            pane: 'pane_RiscT500aos_2',
             format: 'image/png',
             uppercase: true,
             transparent: true,
@@ -144,11 +127,11 @@
             identify: false,
             attribution: '',
         });
-        map.addLayer(layer_RiesgoalapoblacindeorigenfluvialT500aos_2);
-        map.createPane('pane_RiesgoalapoblacindeorigenfluvialT100aos_3');
-        map.getPane('pane_RiesgoalapoblacindeorigenfluvialT100aos_3').style.zIndex = 403;
-        var layer_RiesgoalapoblacindeorigenfluvialT100aos_3 = L.WMS.layer("https://wms.mapama.gob.es/sig/Agua/Riesgo/RiesgoPob_100/wms.aspx", "NZ.RiskZone", {
-            pane: 'pane_RiesgoalapoblacindeorigenfluvialT100aos_3',
+        map.addLayer(layer_RiscT500aos_2);
+        map.createPane('pane_RiscT100aos_3');
+        map.getPane('pane_RiscT100aos_3').style.zIndex = 403;
+        var layer_RiscT100aos_3 = L.WMS.layer("https://wms.mapama.gob.es/sig/Agua/Riesgo/RiesgoPob_100/wms.aspx", "NZ.RiskZone", {
+            pane: 'pane_RiscT100aos_3',
             format: 'image/png',
             uppercase: true,
             transparent: true,
@@ -159,11 +142,11 @@
             identify: false,
             attribution: '',
         });
-        map.addLayer(layer_RiesgoalapoblacindeorigenfluvialT100aos_3);
-        map.createPane('pane_Riesgoalapoblacindeorigenfluvialt10aos_4');
-        map.getPane('pane_Riesgoalapoblacindeorigenfluvialt10aos_4').style.zIndex = 404;
-        var layer_Riesgoalapoblacindeorigenfluvialt10aos_4 = L.WMS.layer("https://wms.mapama.gob.es/sig/Agua/Riesgo/RiesgoPob_10/wms.aspx", "NZ.RiskZone", {
-            pane: 'pane_Riesgoalapoblacindeorigenfluvialt10aos_4',
+        map.addLayer(layer_RiscT100aos_3);
+        map.createPane('pane_Risct10aos_4');
+        map.getPane('pane_Risct10aos_4').style.zIndex = 404;
+        var layer_Risct10aos_4 = L.WMS.layer("https://wms.mapama.gob.es/sig/Agua/Riesgo/RiesgoPob_10/wms.aspx", "NZ.RiskZone", {
+            pane: 'pane_Risct10aos_4',
             format: 'image/png',
             uppercase: true,
             transparent: true,
@@ -174,7 +157,7 @@
             identify: false,
             attribution: '',
         });
-        map.addLayer(layer_Riesgoalapoblacindeorigenfluvialt10aos_4);
+        map.addLayer(layer_Risct10aos_4);
         function pop_Grauderisc_5(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -313,6 +296,22 @@
                     <tr>\
                         <td colspan="2">' + (feature.properties['image'] !== null ? autolinker.link(feature.properties['image'].toLocaleString()) : '') + '</td>\
                     </tr>\
+                    <tr>\
+                        <th scope="row">Ubicació:</th>\
+                        <td>' + (feature.properties['ubicacio'] !== null ? autolinker.link(feature.properties['ubicacio'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Conca hidrogràfica:</th>\
+                        <td class="visible-with-data" id="Concahidr">' + (feature.properties['Concahidr'] !== null ? autolinker.link(feature.properties['Concahidr'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Problemes:</th>\
+                        <td>' + (feature.properties['problemes'] !== null ? autolinker.link(feature.properties['problemes'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Projectes de millora:</th>\
+                        <td>' + (feature.properties['projmil'] !== null ? autolinker.link(feature.properties['projmil'].toLocaleString()) : '') + '</td>\
+                    </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
             var popup = layer.getPopup();
@@ -328,7 +327,7 @@
         rotationOrigin: 'center center',
         icon: L.icon({
             iconUrl: 'markers/Puntscrtics_6.svg',
-            iconSize: [36.48, 36.48]
+            iconSize: [38.0, 38.0]
         }),
                 interactive: true,
             }
@@ -353,23 +352,13 @@
         });
         bounds_group.addLayer(layer_Puntscrtics_6);
         map.addLayer(layer_Puntscrtics_6);
-        var osmGeocoder = new L.Control.Geocoder({
-            collapsed: true,
-            position: 'topleft',
-            text: 'Search',
-            title: 'Testing'
-        }).addTo(map);
-        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
-        .className += ' fa fa-search';
-        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
-        .title += 'Search for a place';
         var baseMaps = {};
         var overlaysTree = [
             {label: '<img src="legend/Puntscrtics_6.png" /> Punts crítics', layer: layer_Puntscrtics_6},
             {label: 'Grau de risc<br /><table><tr><td style="text-align: center;"><img src="legend/Grauderisc_5_MoltBaix0.png" /></td><td>Molt Baix</td></tr><tr><td style="text-align: center;"><img src="legend/Grauderisc_5_Baix1.png" /></td><td>Baix</td></tr><tr><td style="text-align: center;"><img src="legend/Grauderisc_5_Mig2.png" /></td><td>Mig</td></tr><tr><td style="text-align: center;"><img src="legend/Grauderisc_5_Alt3.png" /></td><td>Alt</td></tr><tr><td style="text-align: center;"><img src="legend/Grauderisc_5_MoltAlt4.png" /></td><td>Molt Alt</td></tr></table>', layer: layer_Grauderisc_5},
-            {label: "Riesgo a la población de origen fluvial t=10 años", layer: layer_Riesgoalapoblacindeorigenfluvialt10aos_4},
-            {label: "Riesgo a la población de origen fluvial T=100 años", layer: layer_RiesgoalapoblacindeorigenfluvialT100aos_3},
-            {label: "Riesgo a la población de origen fluvial T=500 años", layer: layer_RiesgoalapoblacindeorigenfluvialT500aos_2},
+            {label: "Risc t=10 años", layer: layer_Risct10aos_4},
+            {label: "Risc T=100 años", layer: layer_RiscT100aos_3},
+            {label: "Risc T=500 años", layer: layer_RiscT500aos_2},
             {label: "GoogleMaps", layer: layer_GoogleMaps_1},
             {label: "Ortoimagen", layer: layer_Ortoimagen_0},]
         var lay = L.control.layers.tree(null, overlaysTree,{
@@ -379,7 +368,7 @@
             //openedSymbol: '&#8863; &#x1f5c1;',
             //collapseAll: 'Collapse all',
             //expandAll: 'Expand all',
-            collapsed: true,
+            collapsed: false, 
         });
         lay.addTo(map);
         setBounds();

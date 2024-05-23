@@ -23,8 +23,8 @@
             padding-right: 10px;
         }
         .leaflet-popup-scrolled {
-            width:auto!important;
-            height: auto!important;
+            width:300px!important;
+            height: 200px!important;
             overflow: auto;
             max-height: 70vw;
             max-width: 70vw;
@@ -54,7 +54,7 @@
         .leaflet-tooltip-left:before, .leaflet-tooltip-right:before {
             border: 0px;
         }
-        }
+        
         .fa, .leaflet-container, a {
             color: #ffffff !important;
         }
