@@ -61,7 +61,7 @@ Per a crear la meva pàgina web, vaig seguir una estratègia de **disseny _mobil
     padding: 35px 0px;
 }
 ```
-![Reference Image](/images/footer1.png)
+![Reference Image](/images/footer1.jpg)
 ```css
 /*Canvia el layout del footer*/
 @media (min-width: 720px)
