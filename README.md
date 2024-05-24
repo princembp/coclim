@@ -35,11 +35,21 @@ Font de les fotos:
     _Elaboració pròpia_
 
 ### 3. **Estructura de la Web.**
-+ Inici
-+ Qui som
-+ Descripció del projecte
-+ Mapa
-+ Contacte
++ Inici: 
+
+    És la pàgina principal de la web, compta amb tres seccions: La imatge del municipi, una petita descripció del projecte i un apartat amb la proposta de valor. 
++ Qui som:
+
+    És l'apartat dels membres de l'equip, amb una foto de cada membre i la informació associada a cadascun d'ells.
++ Descripció del projecte:
+
+    Mostra la informació dels projectes que ha realitzat el grup. El desenvolupament, la metodologia i els resultats.
++ Mapa:
+
+    En aquesta secció, es presenta el mapa del risc d'inundació elaborat en QGIS.
++ Contacte:
+    
+    En aquesta pàgina es troba el formulari de contacte.
 ### 4. **Web responsive.**
 Per a crear la meva pàgina web, vaig seguir una estratègia de **disseny _mobile first_**, vaig dissenyar inicialment la versió per a dispositius mòbils i després vaig adaptar el disseny per a pantalles més grans mitjançant **CSS Media Queries:**
 
